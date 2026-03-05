@@ -1,0 +1,67 @@
+############################
+# OS FILES
+############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+############################
+# JAVA COMPILED FILES
+############################
+*.class
+*.log
+
+############################
+# MAVEN
+############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+############################
+# GRADLE
+############################
+.gradle/
+build/
+
+############################
+# TEST REPORTS
+############################
+test-output/
+surefire-reports/
+failsafe-reports/
+
+############################
+# LOG FILES
+############################
+logs/
+*.log
+
+############################
+# INTELLIJ IDEA
+############################
+.idea/
+*.iml
+out/
+
+############################
+# ECLIPSE
+############################
+.project
+.classpath
+.settings/
+
+############################
+# VS CODE
+############################
+.vscode/
+
+############################
+# TEMP FILES
+############################
+tmp/
+temp/
+*.tmp
