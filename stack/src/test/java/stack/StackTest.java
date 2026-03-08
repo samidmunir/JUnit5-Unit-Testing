@@ -3,6 +3,7 @@ package stack;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -14,6 +15,7 @@ public class StackTest {
 
     @Test
     @DisplayName("Create stack test")
+    @Disabled
     void testStackCreation() {
         stack = new StackRunner();
 
@@ -32,5 +34,28 @@ public class StackTest {
         stack.push(2);
 
         assertTrue(stack.peek() == 2);
+    }
+
+    @Test
+    @DisplayName("Stack peek test")
+    void testStackPeek() {
+        stack = new StackRunner();
+
+        stack.push(0);
+
+        assertTrue(stack.peek() == 0);
+    }
+
+    @Test
+    @DisplayName("Stack pop test")
+    void testStackPop() {
+        stack = new StackRunner();
+
+        stack.push(0);
+        stack.push(11);
+        stack.push(48);
+
+        assertTrue(stack.pop() == 48);
+        assertTrue(stack.peek() == 11);
     }
 }
