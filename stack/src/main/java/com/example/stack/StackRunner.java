@@ -28,4 +28,8 @@ public class StackRunner {
     public String toString() {
         return this.stack.toString();
     }
+
+    public boolean isEmpty() {
+        return this.stack.isEmpty();
+    }
 }
